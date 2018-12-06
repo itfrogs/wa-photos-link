@@ -19,7 +19,7 @@ class photosLinkPluginBackendSaveController extends waJsonController
             $link_model->insert($data, 1);
         }
 
-        if (isset($data['url']) && isset($data['photo_id']) && is_numeric($data['photo_id']) && empty($data['url'])) {
+        if (isset($data['url']) && isset($data['photo_id']) && is_numeric($data['photo_id']) && empty($data['url']) && empty($data['title'])) {
             $link_model->deleteById($data['photo_id']);
         }
 
