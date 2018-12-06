@@ -12,7 +12,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: .\n"
 "Language: ru_RU\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -59,3 +59,7 @@ msgstr "Ссылка для фото"
 #: /wa-apps/photos/plugins/link/lib/config/plugin.php:4
 msgid "Adds a link to each photo."
 msgstr "Добавляет ссылку в каждое фото."
+
+#: /wa-apps/photos/plugins/link/templates/hooks/backend_photo.bottom.html:6
+msgid "Title:&nbsp;"
+msgstr "Заголовок:&nbsp;"

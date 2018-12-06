@@ -1,23 +1,7 @@
 <form action="javascript:void(0);" onsubmit="$.Link_photo.submit(this)">
+    <label for="link-plugin-url">[`Link:&nbsp;`]</label>
     <input type="hidden" name="photo_id" value="{$photo_id}">
-    <table>
-        <tr>
-            <td>
-                <label for="link-plugin-title">[`Title:&nbsp;`]</label>
-            </td>
-            <td>
-                <input name="title" type="text" id="link-plugin-title" style="width: 300px;" value="{if !empty($link)}{$link.title}{/if}"><br />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="link-plugin-url">[`Link:&nbsp;`]</label>
-            </td>
-            <td>
-                <input name="url" type="text" id="link-plugin-url" style="width: 300px;" value="{if !empty($link)}{$link.url}{/if}"><br />
-            </td>
-        </tr>
-    </table>
+    <input name="url" type="text" id="link-plugin-url" style="width: 300px;" value="{if !empty($link)}{$link.url}{/if}">
     <label for="link-plugin-target">[`&nbsp;open in&nbsp;`]</label>
     <select id="link-plugin-target" name="target">
         <option value="_blank" {if !empty($link) && $link.target == '_blank'}selected{/if}>[`new window`]</option>

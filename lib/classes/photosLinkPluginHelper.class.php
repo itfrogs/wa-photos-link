@@ -26,18 +26,6 @@ class photosLinkPluginHelper
         if (!empty($link)) {
             return $link['url'];
         }
-        else return null;
-    }
-
-    /**
-     * @param $photo_id
-     * @return mixed
-     */
-    public static function getTitle($photo_id) {
-        $link = self::getLink($photo_id);
-        if (!empty($link)) {
-            return $link['title'];
-        }
-        else return null;
+        else return false;
     }
 }
